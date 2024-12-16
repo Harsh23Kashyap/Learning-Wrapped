@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Wrapped</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Your Learning Wrapped</h1>
+            <p>Discover how you learn best</p>
+        </div>
+
+        <div class="upload-selector">
+            <button class="btn btn-text btn-active" id="text-tab">Text Input</button>
+            <button class="btn btn-file" id="file-tab">Upload Document</button>
+        </div>
+
+        <div class="upload-area">
+            <div id="text-upload-section">
+                <textarea id="text-input" placeholder="Paste your text here to get your learning insights"></textarea>
+            </div>
+
+            <div id="file-upload-section" style="display: none;">
+                <div class="file-upload-wrapper">
+                    <label for="file-input" class="file-upload-btn">Choose File</label>
+                    <input type="file" id="file-input" accept=".pdf,.docx,.ppt,.pptx,.txt,.rtf,.odt">
+                    <p class="file-name" id="file-name">No file chosen</p>
+                </div>
+            </div>
+
+            <button class="submit-btn" id="submit-btn">Get Your Learning Insights</button>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 20px; font-family: Arial, sans-serif; color: #666;">
+        <p>Developed by Harsh</p>
+        <button id="home-btn" style="
+            margin-top: 10px; 
+            padding: 10px 20px; 
+            font-size: 14px; 
+            color: #fff; 
+            background-color: #333; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease, transform 0.2s ease;">
+            Home
+        </button>
+    </footer>
+    
+    <script>
+        
+        // Handle "Home" button click
+        const homeButton = document.getElementById('home-btn');
+        homeButton.addEventListener('click', () => {
+            window.location.reload();
+        });
+    </script>
+    
+    
+
+    
+
+    <script src="env.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
