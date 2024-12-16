@@ -11,7 +11,7 @@ import requests
 from io import BytesIO
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyB18rjganJojF2eAn5hzaRRz_Gy0E0VPA4")
+genai.configure(api_key="YOU_API")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Flask Application
